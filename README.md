@@ -137,4 +137,5 @@ initial_state = {
 }
 workflow.invoke(initial_state)
 ```
+
 {'a': 4, 'b': 2, 'c': 2, 'equation': '4x^2 + 2x 2', 'discriminant': -28}
