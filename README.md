@@ -129,13 +129,6 @@ graph.add_edge('no_real_roots',END)
 workflow = graph.compile()
 ```
 <img width="483" height="432" alt="de8d980e-9dc9-4252-a468-92cdb6470b6a" src="https://github.com/user-attachments/assets/c7f5b0b3-4999-46d7-9831-265a732a912c" />
-```bash
-initial_state = {
-   "a": 4,
-   "b": 2,
-   "c": 2
-}
-workflow.invoke(initial_state)
-```
+
 
 {'a': 4, 'b': 2, 'c': 2, 'equation': '4x^2 + 2x 2', 'discriminant': -28}
