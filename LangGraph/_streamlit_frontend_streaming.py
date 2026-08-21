@@ -1,5 +1,5 @@
 import streamlit as st
-from LangGraph.__langgraph_backend_ import chatbot
+from __langgraph_backend_ import chatbot
 from langchain_core.messages import HumanMessage
 import os
 
