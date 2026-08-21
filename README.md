@@ -19,6 +19,9 @@ To understand and build advanced AI systems using graph-based architectures.
 from langgraph.graph import StateGraph,START,END
 from typing import TypedDict
 ```
+
+https://github.com/user-attachments/assets/58b85a96-abfa-46ce-8c40-5d404443ad83
+
 # Create class with typedict
 ```bash
 class Batsman(TypedDict):
