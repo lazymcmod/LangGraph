@@ -5,6 +5,7 @@ from langchain_openrouter import ChatOpenRouter
 from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.graph.message import add_messages
 from dotenv import load_dotenv
+import os
 
 
 load_dotenv()
@@ -28,11 +29,3 @@ graph.add_edge(START,"chat_node")
 graph.add_edge("chat_node",END)
 
 chatbot = graph.compile(checkpointer=checkpointer)
-
-stream = chatbot.stream(
-    {'messages': [HumanMessage(content='what is the recipe to make pasta')]},
-    config = {'configurable': {'thread_id': 'thread -1'}},
-    stream_mode= 'messages'
-)
-
-print(type(stream))
