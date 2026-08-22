@@ -9,13 +9,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 api_key = os.getenv("OPENROUTER_API_KEY")
-
-<<<<<<< HEAD
-
-llm = ChatOpenRouter(model='stealth/ox-alpha',api_key='sk-or-vxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') # put your own api key
-=======
 llm = ChatOpenRouter(model='stealth/ox-alpha',api_key=api_key) # put your own api key
->>>>>>> f01a001 (done with api)
+
 
 class ChatState(TypedDict):
     messages: Annotated[list[BaseMessage],add_messages]
