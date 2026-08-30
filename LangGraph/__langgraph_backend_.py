@@ -9,8 +9,7 @@ import os
 
 
 load_dotenv()
-api_key = os.getenv("OPENROUTER_API_KEY")
-llm = ChatOpenRouter(model='stealth/ox-alpha',api_key=api_key) # put your own api key
+llm = ChatOpenRouter(model='nvidia/nemotron-3-ultra-550b-a55b:free',api_key='sk-or-v1-1c6ce5***************************************') # put your own api key
 
 
 class ChatState(TypedDict):
